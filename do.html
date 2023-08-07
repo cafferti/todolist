@@ -10,7 +10,7 @@
    <p>to do list</p> 
    <input class="js-input "type="text" placeholder="todo name" >
    <button  onclick="addtodo( )" >add</button>
-   <p class></p>
+   <div class="js-todo" ></div>
 </body>
 
 <script src="./do.js    ">
@@ -56,4 +56,35 @@ for (let i = 1; i <= 5; i++){
     console.log(i);
 }
 </script> -->
+
+<script>
+
+//   const todoliste = [
+//         `wash your hands`,
+//         `eat your meal`,
+//         `wash your hands again`
+//     ]
+
+// for(index = 0; index < todoliste.length; index++ ){
+//          console.log(todoliste[index])
+// }
+
+
+const num = [1, 2, 3]
+// to calculate the total
+// let total = 0
+// for(let i = 0; i < num.length; i++){
+//     num[i]
+//     const nums = num[i]
+//     total = total + nums
+//     console.log(total)
+// }
+
+const totald = [];
+for(let i = 0; i < num.length; i++){
+    const nums = num[i]
+    totald.push(nums * 2)
+}
+console.log(totald)
+</script> 
 </html>
