@@ -1,6 +1,6 @@
 const todolist = [`wash diner`, `make dishes`]
 
-displaytodolist()
+displaytodolist();
 
 function displaytodolist(){
     
