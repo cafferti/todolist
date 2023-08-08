@@ -19,7 +19,6 @@
      const myArray3 = [`hi`,`hello`,`good`] 
      const myArray4 = [1,1,2]
      const myArray5 = [1,1,3,] 
-     const myArray6 = [10,20,30]
      const myArray7 = [11,20,22, 24, 5]
 
 
@@ -67,9 +66,28 @@
 
         console.log(Sarray)
      }
-arraymerge(myArray4, myArray5)
+         arraymerge(myArray4, myArray5)
      
 
+
+         const myArray6 = [10,-20,30]
+
+        function countP(array) {
+            let positiveCount = 0;
+
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] > 0) {
+                    positiveCount++;
+                }
+            }
+          
+            console.log(positiveCount)  
+        }
+        
+
+        countP(myArray6)
+
+          
 
 
      
