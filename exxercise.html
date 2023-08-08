@@ -16,7 +16,11 @@
       
      const myArray1 = [10,20,30]
      const myArray2 = [11,20,22, 24, 5]
-     const myArray3 = [`hi`,`hello`,`good`]
+     const myArray3 = [`hi`,`hello`,`good`] 
+     const myArray4 = [1,1,2]
+     const myArray5 = [1,1,3,] 
+     const myArray6 = [10,20,30]
+     const myArray7 = [11,20,22, 24, 5]
 
 
      function getlastValue(Array){
@@ -32,16 +36,39 @@
 
      function arraySwap(Array){
 
-            let fvalue = array[0]
-            let lvalue = array[array.length -1]
-            array[0] = lvalue
-            array[array.length -1] = fvalue
+            let fvalue = Array[0]
+            let lvalue = Array[Array.length -1]
+            Array[0] = lvalue
+            Array[Array.length -1] = fvalue
 
-            console.log(array)
+            console.log(Array)
 
      }
 
      arraySwap(myArray1)
+     arraySwap(myArray2)
+     arraySwap(myArray3)
+
+     function arrayincrease(Array, innum){
+        for(i = 0; i < Array.length; i++){
+            Array[i] = Array[i] + innum
+        }
+        console.log(Array)
+     }
+
+     arrayincrease(myArray1,2)
+     arrayincrease(myArray2,2)
+
+
+     function arraymerge(Farray, Sarray){
+        for(i = 0; i < Farray.length; i++){
+          Sarray[i] = Sarray[i] + Farray[i]
+        }
+
+        console.log(Sarray)
+     }
+arraymerge(myArray4, myArray5)
+     
 
 
 
