@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+   
+    let lastvalue = 0;
+    
+      
+     const myArray1 = [10,20,30]
+     const myArray2 = [11,20,22, 24, 5]
+     const myArray3 = [`hi`,`hello`,`good`]
+
+
+     function getlastValue(Array){
+        for(i = 0; i < Array.length; i++){
+        lastvalue = Array[i]
+        }
+        console.log(lastvalue)
+     }
+
+     getlastValue(myArray1)
+     getlastValue(myArray2)
+     getlastValue(myArray3)
+
+     function arraySwap(Array){
+
+            let fvalue = array[0]
+            let lvalue = array[array.length -1]
+            array[0] = lvalue
+            array[array.length -1] = fvalue
+
+            console.log(array)
+
+     }
+
+     arraySwap(myArray1)
+
+
+
+     
+      
+     
+</script>
+</html>
