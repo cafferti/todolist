@@ -110,6 +110,8 @@
 
 
         }}
+
+        
         rearrange(minimum)
 
        countw = [`how`, `which` ,`goat` , `goat` , `how`,`goat`]
@@ -127,19 +129,42 @@
                 }else{
                     savecounts[string] = 1 //if the string has not been created it creates one
                 }
+
             }
 
-            
+
+            for( const key in savecounts){
+                    if(savecounts[key] >= 2){
+                        result.push(key)
+                    }
+                }
 
             console.log(savecounts)  
-            
-            console.log(result)  
+            console.log(result)
          
          }
-         
 
 
-          countwords(countw)
+
+
+          countwords(countw);
+
+    
+    
+          const num = [11, 1, 65, 78, 56, 11, 65, 1, 33, ];
+
+for (let i = 0; i < num.length; i++) {
+    for (let s = i + 1; s < num.length; s++) {
+        const index1 = i;
+        const index2 = s;
+
+        if (num[i] === num[s]) {
+            console.log(`Duplicate found: ${num[index1]}`);
+            break; // This will exit the inner loop once a duplicate is found
+        }
+    }
+}
+
 
 
      
