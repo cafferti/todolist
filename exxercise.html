@@ -112,16 +112,34 @@
         }}
         rearrange(minimum)
 
-       countw = [`how`, `which` ,`goat` , `goat` , `how `,`goat`]
+       countw = [`how`, `which` ,`goat` , `goat` , `how`,`goat`]
+       savecounts = {}
+       result = []
+       let string = null;
+       
+
          function countwords(words){
             for(let i = 0; i < words.length; i++){
-                if(i)
+                string =  words[i] 
+                if(savecounts[string]){
+                    savecounts[string] = savecounts[string] +1
+
+                }else{
+                    savecounts[string] = 1 //if the string has not been created it creates one
+                }
             }
+
+            
+
+            console.log(savecounts)  
+            
+            console.log(result)  
+         
          }
+         
 
 
-
-          
+          countwords(countw)
 
 
      
