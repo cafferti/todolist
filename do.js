@@ -8,7 +8,7 @@ let todolistHtml = ``
 
 for(let i = 0; i < todolist.length; i++){
     const todo = todolist[i];
-    const html = `<p>${todo}</p>`;
+    const html = `<p>${todo}<button>Delete</button></p>`;
     todolistHtml += html;
 }
 document.querySelector(`.js-todo`).innerHTML = todolistHtml

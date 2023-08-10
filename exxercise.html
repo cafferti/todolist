@@ -153,17 +153,16 @@
     
           const num = [11, 1, 65, 78, 56, 11, 65, 1, 33, ];
 
-for (let i = 0; i < num.length; i++) {
-    for (let s = i + 1; s < num.length; s++) {
-        const index1 = i;
-        const index2 = s;
-
-        if (num[i] === num[s]) {
-            console.log(`Duplicate found: ${num[index1]}`);
-            break; // This will exit the inner loop once a duplicate is found
+    for (let i = 0; i < num.length; i++) {
+        for (let s = i + 1; s < num.length; s++) {
+             const index1 = i;
+             const index2 = s;
+               if (num[i] === num[s]) {
+                    console.log(`Duplicate found: ${num[index1]}`);
+                    break; // This will exit the inner loop once a duplicate is found
+                }
         }
-    }
-}
+     }
 
 
 
