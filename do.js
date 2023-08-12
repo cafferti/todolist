@@ -16,10 +16,12 @@ for(let i = 0; i < todolist.length; i++){
         const task = todoobject.name;
         const duedate = todoobject.duedate;
         const html = 
-    `<div>${task}</div>
-     <div>${duedate}</div>
-     <button onclick = " todolist.splice(${i}, 1); displaytodolist(); " >Delete</button>
-    `;
+              
+         `<div>${task}</div>
+          <div>${duedate}</div>
+          <button onclick = " todolist.splice(${i}, 1); displaytodolist(); " >Delete</button>
+        `;
+        
         todolistHtml += html;
 }
 document.querySelector(`.js-todo`).innerHTML = todolistHtml
