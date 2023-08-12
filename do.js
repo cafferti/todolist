@@ -16,10 +16,10 @@ for(let i = 0; i < todolist.length; i++){
         const task = todoobject.name;
         const duedate = todoobject.duedate;
         const html = 
-    `<p>
-      ${task} ${duedate}
-      <button onclick = " todolist.splice(${i}, 1); displaytodolist(); " >Delete</button>
-    </p>`;
+    `<div>${task}</div>
+     <div>${duedate}</div>
+     <button onclick = " todolist.splice(${i}, 1); displaytodolist(); " >Delete</button>
+    `;
         todolistHtml += html;
 }
 document.querySelector(`.js-todo`).innerHTML = todolistHtml
@@ -36,7 +36,7 @@ document.querySelector(`.js-todo`).innerHTML = todolistHtml
    const dateinp =  document.querySelector(`.js-duedate`);
    const duedate = dateinp.value;
    todolist.push({name: name,
-             duedate: duedate
+                 duedate: duedate
              })
    console.log(todolist)
    inpElement.value =  ""
