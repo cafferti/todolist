@@ -29,7 +29,7 @@ for(let i = 0; i < todolist.length; i++){
     document.querySelector(`.js-todo`).innerHTML = todolistHtml
 
 
-}
+};
 
 
 
@@ -45,4 +45,4 @@ for(let i = 0; i < todolist.length; i++){
    console.log(todolist)
    inpElement.value =  ""
    displaytodolist();
-}
+};
