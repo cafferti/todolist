@@ -1,6 +1,7 @@
 let eggcount = 0
 const result = []
 function removeallegg(array){
+    array.reverse()
     for(i = 0; i < array.length; i++){
         if(array[i] === `egg` && eggcount < 2){
             eggcount++
@@ -27,3 +28,18 @@ function removeegg(array){
 removeallegg([`egg`, `fish`, `egg`, `bannana`, `egg`, `fish`, `cassava`]);
 
 removeegg([`egg`, `fish`, `egg`, `bannana`, `egg`, `fish`, `cassava`])
+
+
+function removeduplicate(arguments){
+    let newarray = []
+    for (let i = 0; i < arguments.length; i++) {
+        if (newarray.includes(arguments[i])) {
+            continue
+        }else{
+            newarray.push(arguments[i])
+        }
+    }
+    console.log(newarray)
+}
+
+removeduplicate([`egg`, `fish`, `egg`, `bannana`, `egg`, `fish`, `cassava`])
