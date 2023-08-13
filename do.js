@@ -26,7 +26,7 @@ for(let i = 0; i < todolist.length; i++){
 
         localStorage.setItem(`todolist`, JSON.stringify())
 }
-document.querySelector(`.js-todo`).innerHTML = todolistHtml
+    document.querySelector(`.js-todo`).innerHTML = todolistHtml
 
 
 }
