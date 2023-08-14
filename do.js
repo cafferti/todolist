@@ -3,7 +3,7 @@
 
 //                  { name:`make dishes`,
 //                    duedate: `20-6-2023`}]
-       const todolist = JSON.parse(localStorage.getItem('todolist'));
+        const todolist = JSON.parse(localStorage.getItem('todolist'));
 
           //the above is an array of objects
 
@@ -18,7 +18,6 @@
                 const task = todoobject.name;
                 const duedate = todoobject.duedate;
                 const html = 
-                      
                 `<div>${task}</div>
                   <div>${duedate}</div>
                   <button onclick = " todolist.splice(${i}, 1); displaytodolist(); " >Delete</button>
@@ -26,8 +25,9 @@
                 
         todolistHtml += html;
 
-        localStorage.setItem(`todolist`, JSON.stringify(todolist))
+       
         }
+        localStorage.setItem(`todolist`, JSON.stringify(todolist))
         document.querySelector(`.js-todo`).innerHTML = todolistHtml
 
 
