@@ -1,9 +1,11 @@
-const todolist = [{name :`wash diner`,
-                  duedate: `20-4-2022`},
+// const todolist = [{name :`wash diner`,
+//                   duedate: `20-4-2022`},
 
-                 { name:`make dishes`,
-                   duedate: `20-6-2023`}]
-                  //the above is an array of objects
+//                  { name:`make dishes`,
+//                    duedate: `20-6-2023`}]
+       const todolist = JSON.parse(localStorage.getItem('todolist'));
+
+          //the above is an array of objects
 
         displaytodolist();
 
@@ -24,7 +26,7 @@ const todolist = [{name :`wash diner`,
                 
         todolistHtml += html;
 
-        localStorage.setItem(`todolist`, JSON.stringify())
+        localStorage.setItem(`todolist`, JSON.stringify(todolist))
         }
         document.querySelector(`.js-todo`).innerHTML = todolistHtml
 
