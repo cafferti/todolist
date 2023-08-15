@@ -52,15 +52,25 @@ const finduplicate = (array) =>{
 let unique = []
 
   for(i = 0; i < array.length; i++){
-     for(s = i + 1; s <array.length; s++){
-        if(array[i] === s){
-            unique.push(array[i])
-        }else{
-            
+     if(unique.includes(array[i])){
+        continue
+     }else{
+        unique.push(array[i])
+     }
+    }
+    console.log(unique)
+}
+
+finduplicate(Duplicate)
+
+
+function showindex(arguments){
+    for (let i = 0; i < arguments.length; i++) {
+        if(arguments[i] === `apple`){
+            console.log([i])
         }
     }
-
-
-  }
 }
+
+showindex(Duplicate)
 
