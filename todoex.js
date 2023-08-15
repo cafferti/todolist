@@ -68,9 +68,19 @@ function showindex(arguments){
     for (let i = 0; i < arguments.length; i++) {
         if(arguments[i] === `apple`){
             console.log([i])
+            break
         }
     }
 }
 
 showindex(Duplicate)
+
+const fruits = ["apple", "banana", "orange", "grape"];
+
+if (fruits.includes("apple")) {
+    console.log("Apple is in the array.");
+} else {
+    console.log("Apple is not in the array.");
+}
+
 
