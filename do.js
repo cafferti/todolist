@@ -46,5 +46,6 @@
                     })
           console.log(todolist)
           inpElement.value =  ""
+          dateinp.value =  ""
           displaytodolist();
         };

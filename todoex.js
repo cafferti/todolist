@@ -41,5 +41,26 @@ function removeduplicate(arguments){
     }
     console.log(newarray)
 }
-
 removeduplicate([`egg`, `fish`, `egg`, `bannana`, `egg`, `fish`, `cassava`])
+
+
+
+const Duplicate  = [  "apple","banana","cherry","date","","apple", "cherry", "honeydew"];
+console.log(Duplicate)
+
+const finduplicate = (array) =>{
+let unique = []
+
+  for(i = 0; i < array.length; i++){
+     for(s = i + 1; s <array.length; s++){
+        if(array[i] === s){
+            unique.push(array[i])
+        }else{
+            
+        }
+    }
+
+
+  }
+}
+
